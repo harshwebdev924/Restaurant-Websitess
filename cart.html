@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+DE+SAS+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <style>
+      .logo {
+      width: 120px;
+      height: 60px;
+      object-fit: contain;
+    }
+.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+.nav-link:hover {
+      color: #ffc107 !important
+    }
+ul li {
+      padding-right: 40px;
+      font-size: 20px;
+    }
+
+.header-img {
+      position: relative;
+      background-image: url(images/cart-header-images.jpeg);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      padding-top:50px;
+      padding-bottom: 50px;
+    }
+
+.header-text {
+      padding-top: 50px;
+    }
+
+.great-vibes {
+      font-family: "Great Vibes", cursive;
+      color: #ffc107;
+      letter-spacing: 2px;
+      font-size: 40px;
+}
+.bebas-nue {
+      color: #fff;
+
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 75px;
+    }
+        .card-para{
+      display: flex;
+      align-items: center;
+    }
+    .card-para p{
+      margin: 0;
+    }
+     .cart-bebas-nue {
+      color: #fff;
+        font-weight: bold;
+      font-family: "Bebas Neue", sans-serif;
+     }
+     .cart-row {
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+     }
+     .cart-row p{
+      text-align: center;
+      border-bottom: 1px solid white;
+     }
+     .cart-row p{
+      flex: 3;
+      text-align: center;
+     }
+     .cart-row-2 {
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+     }
+     .cart-row-2 p{
+      text-align: center;
+     }
+     .cart-row-2 p{
+      flex: 2;
+      text-align: center;
+     }
+      .cart-social-icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 60px;
+     }
+      .social-links {
+      display: flex;
+      gap: 12px;
+    }
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #ffc107;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+    
+    .social-icon:hover {
+      transform: translatey(-8px);
+      box-shadow: 0px 10px 35px hsl(45, 100%, 51%);
+    }
+      .footer {
+      border-right: 2px solid white;
+    }
+    .li-link {
+      color: #ffc107;
+    }
+
+    .footer-link {
+      color: #fff;
+    }
+
+    .footer-link:hover {
+      color: #ffc107;
+    }
+    .logo {
+      width: 120px;
+      height: 60px;
+      object-fit: contain;
+    }
+    </style>
+</head>
+<body style=" background-color: rgb(24, 24, 24);"">
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark  text-center" style="background: transparent;">
+      <div class="container-fluid" id="home">
+
+        <a class="navbar-brand header-logo" href="#"> <img src="images/logo restaurent.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item fw-bold">
+              <a class="nav-link active" aria-current="page" href="index.html #home">HOME</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link active" href="index.html #about-us" >ABOUT </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link menu-link active" href="index.html #menu">MENU</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link active" href="index.html #gallery">GALLERY</a>
+            </li>
+            <!-- <li class="nav-item fw-bold">
+              <a class="nav-link active" href="contact-us.html">CONTACT</a>
+            </li> -->
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold fs-5 text-light me-4">
+            <a class="nav-link p-0 active" href="contact-us.html"> <span class="text-light">CONTACT</span></a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="header-img">
+      <div class="text-center header-text">
+      <p class="great-vibes mb-0" style="letter-spacing:2px;">Check Our</p>
+      <h1 class="bebas-nue">YOUR CART</h1>
+      <img src="images/chef-boorder.png" alt="" width="350px"> <br>
+      <div class="pt-3 ">
+        <a href="index.html #home" class="text-light text-decoration-none fs-4 "> Home</a>
+        <span class="text-light fs-4 ps-2"> > </span>
+        <a href="" class=" ps-2  text-decoration-none fs-4" style="color: #ffc107;">
+          Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid mt-3 " 
+    style="width: 100%; background-color: rgb(24, 24, 24);">
+        <div class="row ">
+            <div class="col-lg-8 col-md-12">
+<!-- tomtao soup.................. -->
+
+                <div class="card mb-3 border-0" width="100%">
+                    <div class="row g-0 bg-dark ">
+                        <div class="col-lg-5 col-md-12">
+                  <p class="text-warning fs-5 pt-2 text-center border-bottom">PRODUCT</p>
+                  <div class="d-flex">
+                <img src="images/tomato-soup.jpeg" class=" img-fluid pb-3 w-50 " alt="...">
+                <div class="card-body">
+
+                  <h5 class="card-title fw-bolder fs-3 text-light m-0 ">Tomato Soup</h5>
+                  <div class="card-para">
+                    <p class="card-text text-light ">Creamy Tomato soup with fresh herbs </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12 col-sm-12" >
+                <div class="cart-row">
+                  <p class="text-warning  pt-2 fs-5">PRICE</p>
+                  <p class="text-warning pt-2 fs-5 ">QUANTITY </p>
+                  <p class="text-warning  pt-2 fs-5  ">TOTAL</p>
+                  <p class="text-dark pt-2 fs-5">QUANTITY</p>                 
+                </div>
+                 <div class="cart-row-2 fw-bold pt-5 ">
+                    <p class="text-warning fs-4 text-center ">$4.99</p>
+
+                    <div class="text-light text-center ">
+                <p class="fs-3 border text-center ">
+                    <span class=" ps-3 ">-</span> 
+                    <span class=" px-2 border"> 1</span>
+                    <span class="pe-3">+</span></p>
+                </div>
+                    <p class="text-warning  fs-4  fw-bold  text-end pe-5">$4.99</p>
+                    <p class="text-warning fs-4 text-light"><i class="fa-solid fa-trash-can"></i></p>
+                  </div>
+              </div>             
+            </div>
+        </div>
+
+
+
+              <div class="card mb-3 border-0" width="100%">
+                    <div class="row g-0 bg-dark ">
+                        <div class="col-lg-5 col-md-12">
+                  <p class="text-warning fs-5 pt-2 text-center border-bottom">PRODUCT</p>
+                  <div class="d-flex">
+                <img src="images/grilled-chicken.jpeg" class=" img-fluid pb-3 w-50 " alt="...">
+                <div class="card-body">
+
+                  <h5 class="card-title fw-bolder fs-3 text-light m-0 ">Grilled Chicken</h5>
+                  <div class="card-para">
+                    <p class="card-text text-light ">Delicious grilled chicken with spices </p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12 col-sm-12" >
+                <div class="cart-row">
+                  <p class="text-warning  pt-2 fs-5">PRICE</p>
+                  <p class="text-warning pt-2 fs-5 ">QUANTITY </p>
+                  <p class="text-warning  pt-2 fs-5  ">TOTAL</p>
+                  <p class="text-dark pt-2 fs-5">QUANTITY</p>                 
+                </div>
+                 <div class="cart-row-2 fw-bold pt-5 ">
+                    <p class="text-warning fs-4 text-center ">$12.99</p>
+
+                    <div class="text-light text-center ">
+                <p class="fs-3 border text-center ">
+                    <span class=" ps-3 ">-</span> 
+                    <span class=" px-2 border"> 1</span>
+                    <span class="pe-3">+</span></p>
+                </div>
+                    <p class="text-warning  fs-4  fw-bold  text-end pe-5">$12.99</p>
+                    <p class="text-warning fs-4 text-light"><i class="fa-solid fa-trash-can"></i></p>
+                  </div>
+              </div>             
+            </div>
+        </div>
+<!-- pasta alfredo-cart.............. -->
+          <div class="card mb-3  border-0" width="100%">
+                    <div class="row g-0 bg-dark">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                  <p class="text-warning fs-5 pt-2 text-center border-bottom">PRODUCT</p>
+                  <div class="d-flex">
+                <img src="images/pasta-alfredo.jpeg" class=" img-fluid pb-3 w-50" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title fw-bolder fs-3 text-light m-0 ">Pasta Alfredo</h5>
+                  <div class="card-para">
+                    <p class="card-text text-light ">Creamy White Sauce pasta with parmesan</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12 " >
+                <div class="cart-row">
+                  <p class="text-warning  pt-2 fs-5 ">PRICE</p>
+                  <p class="text-warning pt-2 fs-5  ">QUANTITY</p>
+                  <p class="text-warning  pt-2 fs-5  ">TOTAL</p>
+                  <p class="text-dark pt-2 fs-5">QUANTITY</p>                 
+                </div>
+                <!-- <p class="text-light fs-5"> hghh</p> -->
+                 <div class="cart-row-2 fw-bold pt-5">
+                    <p class="text-warning fs-4   px-2">$10.99</p>
+
+                    <div class="text-light text-center">
+                <p class="fs-3 border text-center">
+                    <span class=" ps-3 ">-</span> 
+                    <span class=" px-2 border"> 1</span>
+                    <span class="pe-3">+</span></p>
+                </div>
+                    <p class="text-warning  fs-4   fw-bold px-2 text-end pe-5">$10.99</p>
+                    <p class="text-warning fs-4 text-light"><i class="fa-solid fa-trash-can"></i></p>
+                  </div>
+              </div>             
+            </div>
+        </div>
+<!-- chocolate-cake-cart........... -->
+        <div class="card mb-0 border-0" width="100%">
+                    <div class="row g-0 bg-dark">
+                        <div class="col-lg-5 col-md-12">
+                  <p class="text-warning fs-5 pt-2 text-center border-bottom">PRODUCT</p>
+                  <div class="d-flex">
+                <img src="images/chocolate-cake.jpeg" class=" img-fluid pb-3 w-50 " alt="...">
+                <!-- <div class="text-center ">
+                  <img src="images/start-border.png" alt="" width="200px ">
+                </div> -->
+                <div class="card-body">
+                  <h5 class="card-title fw-bolder fs-3 text-light m-0 ">Chocolate Cake</h5>
+                  <div class="card-para">
+                    <p class="card-text text-light ">Rich chocoalte cake with chocoalte sauce</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-12 " >
+                <div class="cart-row">
+                  <p class="text-warning  pt-2 fs-5">PRICE</p>
+                  <p class="text-warning pt-2 fs-5 ">QUANTITY</p>
+                  <p class="text-warning  pt-2 fs-5 ">TOTAL</p>
+                  <p class="text-dark pt-2 fs-5">QUANTITY</p>                 
+                </div>
+                 <div class="cart-row-2 fw-bold pt-5 ">
+                    <p class="text-warning fs-4  px-2">$4.99</p>
+
+                    <div class="text-light text-center">
+                <p class="fs-3 border text-center">
+                    <span class=" ps-3 ">-</span> 
+                    <span class=" px-2 border"> 1</span>
+                    <span class="pe-3">+</span></p>
+                </div>
+                    <p class="text-warning  fs-4  fw-bold text-end pe-5">$4.99</p>
+                    <p class="text-warning fs-4 text-light"><i class="fa-solid fa-trash-can"></i></p>
+                  </div>
+              </div>             
+            </div>
+        </div>
+            </div>
+<!--order-summary.......................  -->
+            <div class="col-lg-4 col-md-12 text border px-4">
+              <div class="text-center">
+                <h2 class="text-light cart-bebas-nue text-center pt-5">
+                    ORDER-SUMMARY
+                  </h2>
+                  <img src="images/start-border.png" alt="" width="270px">
+                </div>
+                <div class="d-flex px-3  pt-5" >
+                <p class=" text-light fs-4"> Subtotal (4 items) </p>
+                <p class="text-warning fs-4  ms-auto">$33.96</p>
+                </div>
+                 <div class="d-flex px-3  pt-2" >
+                <p class=" text-light fs-4  "> Delivery Charge </p>
+                <p class="text-warning fs-4 ms-auto ">$2.99</p>
+                </div>
+                <div class="total d-flex border-top px-3 pt-3">
+                    <h2 class="cart-bebas-nue "> Total</h2>
+                    <p class="text-warning bebas-nue fs-4 ms-auto">$36.95</p>
+                </div>
+                <button class="btn btn-warning text-dark fw-bold text-center w-100 p-2 fs-5">
+                  <i class="fa-solid fa-cart-shopping"></i> PROCEED TO CHECKOUT
+                     </button>
+                     <div class="'border-bottom pt-4" >
+                        <p class="text-light border-bottom text-center"> 
+                            <span class="bg-dark fw-bold"  style="position: relative; top: 10px; border: 1px solid white; padding:5px; border-radius: 50%;" >
+                             OR  </span>
+                        </p>
+                     </div>
+                     <button class="btn btn-dark text-light border border-warning w-100 mt-4 p-2 fs-5 fw-bold mb-5 ">
+                    APPLY COUPON CODE
+                     </button>
+                  </div>
+              </div>
+          </div>
+<!-- row of secure paymet................... -->
+          <div class="container-fluid px-3 "  style="width: 100%; background-color: rgb(24, 24, 24);">
+            <div class="row mt-2 py-4   bg-dark" >
+              <div class="col-lg-3 col-md-6 col-sm-6 py-4">
+                  <div class="d-flex">
+              <a href="" class=" cart-social-icon text-light"><i class="fa-regular fa-clock text-warning icon-size "></i></a>
+                <p class="ps-3 text-light m-0 fs-5 " style="line-height:1.2;"> <span class="fs-4 fw-bold"> FAST DELIVERY </span> <br>
+                  <span class="fs-6  m-0" style="line-height:0.9;">Quick Delivery at your doorstep.</span>
+                </p>
+            </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6  py-4">
+                 <div class="d-flex ">
+              <a href="" class=" cart-social-icon text-light">
+                <i class="fa-regular fa-circle-check text-warning "></i></a>
+                <p class="ps-3 text-light m-0 fs-5 " style="line-height:1.2;"> <span class="fs-4 fw-bold">SECURE PAYMENT </span><br>
+                  <span class="fs-6  m-0" style="line-height:0.9;">100% secure payment methods</span>
+                </p>
+            </div>
+
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 py-4">
+                  <div class="d-flex ">
+              <a href="" class=" cart-social-icon text-light">
+                <i class="fa-solid fa-award text-warning "></i></a>
+                <p class="ps-3 text-light m-0 fs-5  " style="line-height:1.2;"> <span class="fw-bold fs-4"> BEST QUALITY </span> <br>
+                  <span class="fs-6  m-0" style="line-height:0.9;">We serve the best quality food</span>
+                </p>
+            </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 py-4">
+
+                <div class="d-flex ">
+              <a href="" class=" cart-social-icon text-light">
+                <i class="fa-solid fa-headset text-warning"></i></a>
+                <p class="ps-3 text-light m-0 fs-5  " style="line-height:1.2;"> <span class="fw-bold fs-4"> BEST QUALITY </span> <br>
+                  <span class="fs-6  m-0" style="line-height:0.9;">We serve the best quality food</span>
+                </p>
+            </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- footer........................... -->
+  <div class="container-fluid bg-dark mt-5" id="contact">
+    <div class="row pt-5 px-4">
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <a class="navbar-brand header-logo" href="#"> <img src="images/logo restaurent.png" class="logo" alt=""></a>
+        <p class="text-light pt-4"> Fresh Ingredients, dellicious flavors and
+          a dining experience you'll love.
+        </p>
+        <div class="social-links">
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-facebook-f "></i></a>
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" class="social-icon text-light "><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+<!-- quick-links......... -->
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2 ">QUICK LINKS</h3>
+
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link "></i> <a href="index.html #home"
+            class=" text-decoration-none fw-bold footer-link"> Home</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="index.html #about-us"
+            class=" text-decoration-none fw-bold  footer-link"> About Us</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="#"
+            class=" text-decoration-none fw-bold footer-link"> Our Menu</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="index.html #gallery"
+            class=" text-decoration-none fw-bold footer-link"> Gallery</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="contact-us.html"
+            class=" text-decoration-none fw-bold footer-link"> Contact Us</a><br>
+        </div>
+      </div>
+
+<!-- opening-hours..... -->
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2">OPENING HOURS</h3>
+        <div class="text-light ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i>
+          Monday- Friday <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08:00 AM - 10:00 pm <br>
+        </div>
+        <div class=" text-light ps-3 pt-3">
+          <i class="fa-solid fa-chevron-right li-link"></i>
+          Saturday-Sunday <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09:00 AM 11:00 pm
+        </div>
+      </div>
+<!-- contact-us......... -->
+      <div class="col-12 col-sm-12 col-md-6  col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2 pb-2 ">CONTACT-US</h3>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-solid fa-location-dot  li-link"></i>
+          <span class="ps-2">123, Main Street, New York, USA</span>
+        </div>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-solid fa-phone li-link"></i>
+          <span class="ps-2">+1&nbsp;234 &nbsp;567&nbsp 8900 </span>
+        </div>
+
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-regular fa-envelope li-link"></i>
+          <span class="ps-2">info@foodierestaurant.com </span>
+        </div>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-brands fa-sistrix li-link"></i>
+          <span class="ps-2">www.foodierestaurant.com </span>
+        </div>
+      </div>
+    </div>
+    <div class="row py-3" style="border-top: 2px solid white;">
+      <div class="col-12 text-center text-light">
+        @2024 Foodie Restaurant, All Rights Reserved.
+      </div>
+    </div>
+</body>
+</html>

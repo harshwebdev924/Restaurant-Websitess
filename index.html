@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+DE+SAS+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    ul li {
+      padding-right: 40px;
+      font-size: 25px;
+      /* font-weight: bold; */
+    }
+
+
+    .nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important
+    }
+
+    .logo {
+      width: 120px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .hero-image {
+      position: relative;
+      background-image: url(images/hero-image.jpg);
+      background-position: center;
+      background-size: cover;
+      padding-top: 0px;
+      padding-bottom: 250px;
+    }
+
+    .navbar {
+      background: transparent;
+    }
+
+    .header-text {
+      margin-top: 60px;
+    }
+
+    .header-para {
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 4
+      8px;
+      margin: 0px;
+    }
+
+    .header-heading {
+      font-size: 66px;
+      line-height: 0.9;
+    }
+
+    .header-para-2 {
+      line-height: 0.9;
+    }
+
+    .about-heading {
+      color: black;
+      font-weight: bold;
+    }
+
+    .about-navs {
+      background-color: #ffc107;
+      padding: 10px 25px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .about-nav {
+      text-decoration: none;
+      color: black;
+      padding: 10px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .about-nav:hover {
+      background-color: hsl(45, 100%, 51%);
+      color: white;
+    }
+
+    .card-box {
+      margin-bottom: 20px;
+      transition: all 0.4s ease;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card-box:hover {
+      transform: translatey(-8px);
+      box-shadow: 0px 10px 35px rgba(4, 0, 1, 0.25);
+    }
+
+    .rating {
+      display: flex;
+      gap: 3px;
+    }
+
+    .today-special {
+      display: flex;
+    }
+
+    .footer {
+      border-right: 2px solid white;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #ffc107;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    .social-icon:hover {
+      transform: translatey(-8px);
+      box-shadow: 0px 10px 35px hsl(45, 100%, 51%);
+    }
+
+    .li-link {
+      color: #ffc107;
+    }
+
+    .footer-link {
+      color: #fff;
+    }
+
+    .footer-link:hover {
+      color: #ffc107;
+    }
+
+    .cart-menu {
+      color: #ffc107;
+      border: 1px;
+      border-radius: 5px;
+      align-items: center;
+      flex-shrink: 0;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .cart-menu a {
+      color: black;
+    }
+
+    .cart-menu:hover {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header........ -->
+  <div class="hero-image w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark  text-center" style="background: transparent;">
+      <div class="container-fluid" id="home">
+
+        <a class="navbar-brand header-logo" href="#"> <img src="images/logo restaurent.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active fw-bold">
+              <a class="nav-link  nav-links p-2 " aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link " href="#about-us">ABOUT </a>
+            </li>
+            <li class="nav-item  fw-bold">
+              <a class="nav-link" href="#menu">MENU</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link" href="#gallery">GALLERY</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold border fs-5 me-4">
+            <a class="nav-link p-0 text-light " href="contact-us.html"> <span class="text-light">CONTACT </span></a>
+          </button>
+        </div>
+
+      </div>
+
+    </nav>
+    <div class="container">
+      <div class="header-text">
+        <p class="text-warning header-para">welcome to</p>
+        <h1 class="text-light fw-bold header-heading">FOODIE <br> <span>RESTAURANT</span></h1>
+        <div> <img src="images/chef-boorder.png" alt="" style="width: 250px;"></div>
+        <p class="text-light fs-4 mt-3 header-para-2">Experience the taste of delicious food made with <br>
+          fresh ingredients and saved with love.
+        </p>
+        <div class="mt-4">
+          <a href="#menu"><button type="button" class="btn border btn-warning ps-4 pe-4 text-light fs-5"> OUR
+              MENU</button></a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- About-us -->
+  <div class="container-fluid">
+    <div class="container" id="about-us">
+      <p class="header-para text-warning  fw-bold text-center border-bottom-dark fs-1 pt-3">About-Us</p>
+      <div class="row">
+        <div class="col-lg-5 col-sm-12">
+          <img src="images/about-us-image.png" alt="" style=" width: 100%;">
+        </div>
+        <div class="col-lg-7 col-sm-12 ">
+          <h1 class="about-heading m-0">WE SERVE DELICIOUS FOOD <br> SINCE 2002</h1>
+          <div> <img src="images/chef-boorder.png" alt="" class="text-warning" style="width: 250px;"></div>
+          <p class="mb-2">At Foodie Restaurant, we serve delicious and freshly prepared food
+            made with quality ingredients. our goal is to provide great taste,
+            warm hospitality, and a memorable dining Experience for every guest.
+          </p>
+          <div class="row">
+            <div class="col-4">
+              <div class="card-image text-center">
+                <img src="images/chef.jpg" alt="" width="50%">
+                <div class="card-title">
+                  <p class="fw-bold m-1"> MASTER CHEF</p>
+                  <div class="card-text">
+                    "Expert chefs creating delicious dishes with passion"
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 ">
+              <div class="card-image text-center">
+                <img src="images/food.jpg" alt="" width="50%">
+                <div class="card-title">
+                  <p class="fw-bold m-1">QUALITY FOOD</p>
+                  <div class="card-text">
+                    fresh ingredients creating delicious meals with great taste.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card-image text-center">
+                <img src="images/services.jpg" alt="" width="50%">
+                <div class="card-title">
+                  <p class="fw-bold m-1"> BEST SERVICES</p>
+                  <div class="card-text">
+                    Friendly service making every dining experience special.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our menu............ -->
+
+  <div class="container" id="menu">
+    <div class="text-center">
+      <h1 class="fw-bold text-center pt-4 m-0">OUR MENU</h1>
+      <img src="images/chef-boorder.png" alt="" class="text-center" style="width: 250px; text-align: center;">
+      <nav class="navbar navbar-expand-lg navbar-light pb-4 text-center" style="background: transparent;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mb-3">
+                <a class="about-navs active text-light " href="#">ALL</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="about-nav" href="starters.html">STARTERS</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="about-nav" href="main-course.html">MAIN COURSE</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class=" about-nav" href="desserts.html ">DESSERT</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class=" about-nav" href="beverages.html">BEVERAGES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card card-box">
+          <div class="card-image">
+            <img src="images/soup.jpeg" alt="" width="100%">
+            <div class="card-body">
+              <div class="card-title">
+                <h4 class="fw-bolder"> Tomato Soup <br><span>$4.99</span></h4>
+              </div>
+              <div class="card-text d-flex align-items-center">
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                </div>
+                <div class="cart-menu ms-auto">
+                  <a href="cart.html" class="ms-auto "> <i class="fa-solid fa-cart-shopping ms-auto fs-4"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card card-box">
+          <div class="card-image">
+            <img src="images/grilled.jpeg" alt="" width="100%">
+            <div class="card-body">
+              <div class="card-title">
+                <h4 class="fw-bolder "> Grilled Chicken <br><span>$8.99</span></h4>
+              </div>
+              <div class="card-text d-flex align-items-center">
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                </div>
+                <div class="cart-menu ms-auto">
+                  <a href="cart.html" class="ms-auto "> <i class="fa-solid fa-cart-shopping ms-auto fs-4"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card card-box">
+          <div class="card-images">
+            <img src="images/pasta.jpeg" alt="" width="100%">
+            <div class="card-body">
+              <div class="card-title">
+                <h4 class="fw-bolder "> Pasta Alfredo <br><span>$7.89</span></h4>
+              </div>
+              <div class="card-text d-flex align-items-center">
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning  "></i>
+                </div>
+                <div class="cart-menu ms-auto">
+                  <a href="cart.html" class="ms-auto "> <i class="fa-solid fa-cart-shopping ms-auto fs-4"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card card-box">
+          <div class="card-images">
+            <img src="images/cake-chclt.jpeg" alt="" width="100%">
+            <div class="card-body">
+              <div class="card-title">
+                <h4 class="fw-bolder "> Chocolate Cake <br><span>$4.99</span></h4>
+              </div>
+              <div class="card-text d-flex align-itenms-center">
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                  <i class="fa-solid fa-star text-warning "></i>
+                </div>
+                <div class="cart-menu ms-auto">
+                  <a href="cart.html" class="ms-auto "> <i class="fa-solid fa-cart-shopping ms-auto fs-4"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- our gallery................. -->
+
+  <div class="container-fluid bg-dark mb-5 mt-4" width="100%">
+    <div class="container" id="gallery">
+
+      <div class="row align-items-center ">
+        <div class="col-md-12  col-lg-6">
+          <div class="text-center ">
+            <h2 class="text-light m-0 text-center"> TODAY'S SPECIAL</h2>
+            <img src="images/chef-boorder.png" alt="" class="img-fluid" style="width: 200px;">
+          </div>
+          <div class="today-special d-flex align-items-center img-fluid">
+            <div class="w-50 text-center">
+              <img src="images/gallery-imagesss.png" alt="" class=" img-fluid">
+            </div>
+            <div class="ps-4 pt-3 w-50">
+              <h1 class="text-light " style="line-height:0.9 ;">Grilled Chicken with Veggies
+              </h1>
+              <h2 class="text-warning fw-bold pt-2 pb-2">$10.99</h2>
+              <p class="text-light"> Tender, juicy chicken served with fresh <br>
+                veggies and savory flavors.
+              </p>
+              <button type="button" class="btn btn-warning text-dark ps-4 pe-4 mb-3">
+                <a href="cart.html" class="text-decoration-none text-dark"> ORDER NOW </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12b col-lg-6 py-5 ">
+          <div class="text-center">
+            <h2 class="text-light m-0 text-center">OUR GALLERY</h2>
+            <img src="images/chef-boorder.png" alt="" class="img-fluid" style="width: 200px; padding-bottom: 50px;">
+
+          </div>
+          <div class="row pt-3 ">
+            <div class="col-3 pb-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-1.jpeg" alt="" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-2.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-3.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/galler-image-4.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-5.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-6.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-7.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="images/gallery-img-8.jpeg" alt="" width="100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- slider............. -->
+  <!-- what our customer says............. -->
+  <div class="container-fluid">
+    <div class="text-center">
+      <h1 class="text-dark fw-bolder">WHAT OUR CUSTOMER SAYS</h1>
+      <img src="images/chef-boorder.png" alt="" width="350px">
+    </div>
+    <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 col-md-6 ">
+              <div class="card" style=" box-shadow: 0px 4px 15px  grey; border-radius: 5px; background: #fff;">
+                <div class="customer-card text-center p-4">
+                  <!-- <i class="fa-solid fa-quote-left"></i> -->
+                  <p>
+                    The food was delicious and the service was excellent.
+                    Highly recommended!
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center pt-3">
+
+                    <img src="images/john doe.jpeg" alt="" width="70px" class="customer-img "
+                      style="border-radius: 70%;">
+
+                    <h4 class="ps-3">John Doe <br><span>
+                        <h6>Customer</h6>
+                      </span></h4>
+                    <!-- <span>Customer</span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="card" style=" box-shadow: 0px 4px 15px  grey; border-radius: 5px; background: #fff;">
+                <div class="customer-card text-center p-4">
+                  <!-- <i class="fa-solid fa-quote-left"></i> -->
+                  <p>
+                    Amazing taste, beautiful presentation,
+                    and very <br>friendly staff.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center pt-3">
+                    <img src="images/sara-smith.jpeg" alt="" class="customer-img"
+                      style="width: 70px; border-radius: 70%;">
+                    <h4 class="ps-3">Sarah Smith <span>
+                        <h6>Customer</h6>
+                      </span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center mt-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="card" style=" box-shadow: 0px 4px 15px  grey; border-radius: 5px; background: #fff;">
+                <div class="customer-card text-center p-4">
+                  <!-- <i class="fa-solid fa-quote-left"></i> -->
+                  <p>
+                    A wonderful dining experience!
+                    Everything was fresh and full of flavor.
+                  </p>
+                  <div class="d-flex justify-content-center align-items-center pt-3">
+                    <img src="images/michael-brown.jpeg" alt="" class="customer-img"
+                      style="width: 70px; border-radius: 70%;">
+
+                    <h4 class="ps-3">Michael Brown<span>
+                        <h6>Customer</h6>
+                      </span></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="carousel-indicators position-static mt-3">
+        <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="0" class="active"></button>
+
+        <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="1"></button>
+
+        <button type="button" data-bs-target="#testimonialSlider" data-bs-slide-to="2"></button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer............ -->
+  <div class="container-fluid bg-dark" id="contact">
+    <div class="row pt-5 px-4">
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <a class="navbar-brand header-logo" href="#"> <img src="images/logo restaurent.png" class="logo" alt=""></a>
+        <p class="text-light pt-4"> Fresh Ingredients, dellicious flavors and
+          a dining experience you'll love.
+        </p>
+        <div class="social-links">
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-facebook-f "></i></a>
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" class="social-icon text-light "><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="social-icon text-light"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <!-- quick-links......... -->
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2 ">QUICK LINKS</h3>
+
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link "></i> <a href="#home"
+            class=" text-decoration-none fw-bold footer-link"> Home</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="#about-us"
+            class=" text-decoration-none fw-bold  footer-link"> About Us</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="#menu"
+            class=" text-decoration-none fw-bold footer-link"> Our Menu</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="#gallery"
+            class=" text-decoration-none fw-bold footer-link"> Gallery</a><br>
+        </div>
+        <div class="pb-2 ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i> <a href="contact-us.html" target="_blank"
+            class=" text-decoration-none fw-bold footer-link"> Contact Us</a><br>
+        </div>
+      </div>
+
+      <!-- opening-hours..... -->
+      <div class=" col-12 col-sm-12 col-md-6 col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2">OPENING HOURS</h3>
+        <div class="text-light ps-3">
+          <i class="fa-solid fa-chevron-right li-link"></i>
+          Monday- Friday <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08:00 AM - 10:00 pm <br>
+        </div>
+        <div class=" text-light ps-3 pt-3">
+          <i class="fa-solid fa-chevron-right li-link"></i>
+          Saturday-Sunday <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09:00 AM 11:00 pm
+        </div>
+      </div>
+      <!-- contact-us......... -->
+      <div class="col-12 col-sm-12 col-md-6  col-lg-3 footer mb-5">
+        <h3 class="text-light ps-2 pb-2 ">CONTACT-US</h3>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-solid fa-location-dot  li-link"></i>
+          <span class="ps-2">123, Main Street, New York, USA</span>
+        </div>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-solid fa-phone li-link"></i>
+          <span class="ps-2">+1&nbsp;234 &nbsp;567&nbsp 8900 </span>
+        </div>
+
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-regular fa-envelope li-link"></i>
+          <span class="ps-2">info@foodierestaurant.com </span>
+        </div>
+        <div class="text-light ps-3 pb-3">
+          <i class="fa-brands fa-sistrix li-link"></i>
+          <span class="ps-2">www.foodierestaurant.com </span>
+        </div>
+
+      </div>
+    </div>
+    <div class="row py-3" style="border-top: 2px solid white;">
+      <div class="col-12 text-center text-light">
+        @2024 Foodie Restaurant, All Rights Reserved.
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
