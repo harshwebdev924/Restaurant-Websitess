@@ -165,18 +165,27 @@
     .footer-link:hover {
       color: #ffc107;
     }
+    .card-body{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
     .card-para{
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 10px;
+      margin-top: auto;
+      min-height: 65px;
     }
     .card-para p{
       margin: 0;
+      flex: 1;
     }
     .add-cart{
       width: 34px;
       height: 34px;
+      min-height: 34px;
       font-size: 16px;
       border: 1px solid #000000;
       border-radius: 5px;
@@ -304,7 +313,7 @@
   <div class="container">
     <div class="row">
 <!--tomato-soup........................  -->
-      <div class="col-6 ">
+      <div class="col-12 col-md-6 ">
         <div class="card starters-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="  col-md-5 ">
@@ -328,7 +337,7 @@
         </div>
       </div>
  <!-- garlic-bread....................... -->
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <div class="card starters-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
