@@ -92,11 +92,22 @@
       
     }
     .dessert-box {
+      height: 100%;
       margin-bottom: 20px;
       transition: all 0.4s ease;
       border-radius: 10px;
       overflow: hidden;
       color: black;
+    }
+    .dessert-box img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 767px){
+      .dessert-box img{
+        height: 180px;
+      }
     }
 
     .dessert-box:hover {
@@ -152,11 +163,18 @@
     .footer-link:hover {
       color: #ffc107;
     }
+     .card-body{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
     .card-para{
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 10px;
+      margin-top: auto;
+      min-height: 65px;
     }
     .card-para p{
       margin: 0;
@@ -290,11 +308,11 @@
   <div class="container">
     <div class="row">
 <!--chocolate-cake........................  -->
-      <div class="col-6 ">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6 ">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="  col-md-5 ">
-                <img src="images/chocolate-cake.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/chocolate-cake.jpeg" class="img-fluid rounded-start w-100 " alt="...">
               </div>
               <div class=" col-md-7  ">
                 <div class="card-body">
@@ -315,11 +333,11 @@
         </div>
       </div>
  <!-- cheesecake....................... -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/cheese-cake.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/cheese-cake.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -340,11 +358,11 @@
         </div>
       </div>
 <!-- red-velvet-cake...................... -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/red-velvet-cake.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/red-velvet-cake.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -366,11 +384,11 @@
         </div>
       </div>
 <!--Chocolate-Brownie......................  -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/chocolate-brownie.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/chocolate-brownie.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -391,11 +409,11 @@
         </div>
       </div>
 <!-- tiramisu........................ -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/tiramisu.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/tiramisu.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -416,11 +434,11 @@
         </div>
       </div>
 <!-- vanilla-ice-cream........................... -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/vanilla-icecream.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/vanilla-icecream.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -441,11 +459,11 @@
         </div>
       </div>
 <!-- fruit tart........................... -->
-      <div class="col-6">
-        <div class="card dessert-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/fruit-tart.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/fruit-tart.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -466,11 +484,11 @@
         </div>
       </div>
 <!-- Chocolate-mousse............................ -->
-      <div class="col-6">
-        <div class="card mb-3 dessert-box" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card dessert-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/chicken-tikka-masala.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/chicken-tikka-masala.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
