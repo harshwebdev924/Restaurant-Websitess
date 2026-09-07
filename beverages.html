@@ -86,13 +86,23 @@
       
     }
     .beverages-box {
+      height: 100%;
       margin-bottom: 20px;
       transition: all 0.4s ease;
       border-radius: 10px;
       overflow: hidden;
       color: black;
     }
-
+    .beverages-box img{
+      width: 1005;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 767px){
+      .beverages-box img{
+        height: 180px;
+      }
+    }
     .beverages-box:hover {
       transform: translatey(-8px);
       box-shadow: 0px 10px 35px rgba(4, 0, 1, 0.25);
@@ -148,14 +158,22 @@
     .footer-link:hover {
       color: #ffc107;
     }
-    .card-para{
+    .card-body{
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+   .card-para{
+      display: flex;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 10px;
+      margin-top: auto;
+      min-height: 65px;
     }
     .card-para p{
       margin: 0;
+      flex: 1;
     }
     .add-cart{
       width: 34px;
@@ -283,11 +301,11 @@
   <div class="container">
     <div class="row">
 <!--Masala-chai........................  -->
-      <div class="col-6 ">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6 ">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="  col-md-5 ">
-                <img src="images/masala-chae.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/masala-chae.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class=" col-md-7  ">
                 <div class="card-body">
@@ -308,11 +326,11 @@
         </div>
       </div>
  <!-- Espresso....................... -->
-      <div class="col-6">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/espresso.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/espresso.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -333,11 +351,11 @@
         </div>
       </div>
 <!-- Cappuccino...................... -->
-      <div class="col-6">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/cappucino.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/cappucino.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -358,11 +376,11 @@
         </div>
       </div>
 <!--iced-coffe......................  -->
-      <div class="col-6">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/iced-coffee.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/iced-coffee.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -383,11 +401,11 @@
         </div>
       </div>
 <!-- Mango-shake........................ -->
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <div class="card beverages-box mb-3" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/mango-shake.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/mango-shake.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -408,11 +426,11 @@
         </div>
       </div>
 <!-- chocolate milkshake........................... -->
-      <div class="col-6">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/chocolate-milks-hake.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/chocolate-milks-hake.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -433,11 +451,11 @@
         </div>
       </div>
 <!--Lemonade........................... -->
-      <div class="col-6">
-        <div class="card beverages-box mb-3" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/lemonade.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/lemonade.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
@@ -459,12 +477,12 @@
         </div>
       </div>
 <!-- Mojito............................ -->
-      <div class="col-6">
-        <div class="card mb-3 beverages-box" width="100%">
+      <div class="col-12 col-md-6">
+        <div class="card beverages-box mb-3 h-100" width="100%">
           <!-- <a href="" class="text-decoration-none "> -->
             <div class="row g-0">
               <div class="col-md-5">
-                <img src="images/mojito.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                <img src="images/mojito.jpeg" class="img-fluid rounded-start w-100" alt="...">
               </div>
               <div class="col-md-7 ">
                 <div class="card-body">
